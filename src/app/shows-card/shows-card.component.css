@@ -1,0 +1,29 @@
+.show-card {
+  width: 250px;
+  height: 400px;
+  margin: 15px;
+}
+
+.show-img {
+  height: 65%;
+  width: 100%;
+}
+
+.go-to-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.show-name {
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.show-sub-details {
+  font-weight: normal;
+  margin: 5px 0px;
+}
+
+.go-to-icon{
+  margin-bottom: 15px;
+}

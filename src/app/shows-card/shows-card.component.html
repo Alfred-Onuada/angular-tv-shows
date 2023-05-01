@@ -1,0 +1,14 @@
+<mat-card class="show-card">
+  <img mat-card-image [src]="show.image_thumbnail_path" alt="Photo of a {{ show.name }}" 
+    class="show-img">
+  <mat-card-content>
+   <h3 class="show-name">{{ show.name }}</h3>
+   <h4 class="show-sub-details">Network: {{ show.network }}</h4>
+   <h4 class="show-sub-details">County: {{ show.country }}</h4>
+  </mat-card-content>
+  <mat-card-actions class="go-to-container">
+    <a routerLink="/show" [queryParams]="{id: show.id}">
+      <mat-icon class="go-to-icon">open_in_new</mat-icon>
+    </a>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,42 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.tv-show {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  padding: 20px;
+  width: 90%;
+}
+
+.tv-show h2 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.tv-show p {
+  margin: 10px 0;
+}
+
+.tv-show img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+.episodes {
+  margin: 10px 0;
+}
+
+.episode {
+  margin-bottom: 10px;
+}
+
+.episode p {
+  margin: 0;
+}

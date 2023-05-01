@@ -1,0 +1,23 @@
+<main>
+  <div class="tv-show" *ngIf="show">
+    <h2 id="tv-show-name">{{ show.name }}</h2>
+    <img id="tv-show-image" [src]="show.image_path" alt="">
+    <p id="tv-show-description">{{show.description}} <br> {{show.description_source}}</p>
+    <p><strong>Start Date:</strong> <span id="tv-show-start-date">{{ show.start_date | date }}</span></p>
+    <p><strong>End Date:</strong> <span id="tv-show-end-date">{{ show.end_date | date }}</span></p>
+    <p><strong>Country:</strong> <span id="tv-show-country">{{ show.country }}</span></p>
+    <p><strong>Status:</strong> <span id="tv-show-status">{{ show.status }}</span></p>
+    <p><strong>Runtime:</strong> <span id="tv-show-runtime">{{ show.runtime }}</span> minutes</p>
+    <p><strong>Network:</strong> <span id="tv-show-network">{{ show.network }}</span></p>
+    <p><strong>Genres:</strong> <span id="tv-show-genres">{{ show.genres }}</span></p>
+    <div class="episodes">
+      <h3>Episodes</h3>
+      <div id="tv-show-episodes" *ngFor="let episode of show.episodes">
+        <p><i>Name: </i>{{ episode.name }}</p>
+        <p><i>Season: </i>{{ episode.season }}</p>
+        <p><i>Episode No: </i>{{ episode.episode }}</p>
+        <p><i>Aired: </i>{{ episode.air_date | date }}</p>
+      </div>
+    </div>
+  </div>
+</main>

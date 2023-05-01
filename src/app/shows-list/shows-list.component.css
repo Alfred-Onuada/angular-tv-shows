@@ -1,0 +1,38 @@
+.container {
+  margin: 30px 2.5%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0px;
+}
+
+.shows-count {
+  font-weight: normal;
+}
+
+.search-box {
+  width: 350px;
+  height: 45px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shows {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}

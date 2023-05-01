@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="heading">
+    <h1 class="text-center">Welcome to the Home of Tv Shows</h1>
+  </div>
+
+  <div class="shows-body">
+    <div class="search-container">
+      <h4 class="shows-count">Shows {{ from }} to {{ to }} of {{ total }}</h4>
+      <input type="search" class="search-box" placeholder="Type a show name" [(ngModel)]="searchTerm">
+    </div>
+
+    <div class="shows">
+      <app-shows-card  *ngFor="let show of shows" [show]="show"></app-shows-card>
+    </div>
+
+    <div class="pagination">
+      <button mat-raised-button color="primary" (click)="prevPage()" [disabled]="this.currentPage === 1">Prev</button>
+      <button mat-raised-button color="primary" (click)="nextPage()" [disabled]="(this.currentPage * 20) >= this.total">Next</button>
+    </div>
+  </div> 
+</div>
